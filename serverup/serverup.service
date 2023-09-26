@@ -1,0 +1,12 @@
+[Unit]
+Description=Confirm that the server is still on the network, otherwise reboot.
+Wants=serverup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/bin/serverup.py
+User=root
+Group=systemd-journal
+
+[Install]
+WantedBy=multi-user.target

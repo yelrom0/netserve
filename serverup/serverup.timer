@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to start the serverup service.
+
+[Timer]
+Unit=serverup.service
+OnBootSec=5min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
