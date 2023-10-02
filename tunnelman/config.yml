@@ -1,0 +1,7 @@
+gateways:
+  - name:
+    ip:
+services:
+  - name:
+    port:
+    protocol:
