@@ -1,0 +1,2 @@
+pulumi-docker==4.4.1
+pulumi-ovh==0.34.3
